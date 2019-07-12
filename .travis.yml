@@ -1,9 +1,10 @@
+language: generic
 sudo: required
 services:
   - docker
 
 before_install:
-  - docker build -t jamessutterfield/react-text -f ./client/Dockerfile.dev ./client
+  - docker build -t jamessutterfield/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run -e CI=true jamessutterfield/react-test npm test
