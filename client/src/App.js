@@ -13,7 +13,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
-          <h1>Fib Calculator</h1>
+          <h1>Fib Calculator Version 2</h1>
         </header>
         <div>
           <Route exact path="/" component={Fib} />
